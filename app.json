@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Local Deals",
+    "slug": "local-deals-app",
+    "version": "1.0.0",
+    "sdkVersion": "55.0.0",
+    "platforms": ["ios", "android", "web"],
+    "orientation": "portrait",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "We need your location to surface nearby deals.",
+          "locationWhenInUsePermission": "We need your location to surface nearby deals."
+        }
+      ]
+    ]
+  }
+}
